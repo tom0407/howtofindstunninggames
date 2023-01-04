@@ -6,6 +6,15 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+:root {
+    --gray: #343138;
+    --red-crimson: #dc143c;
+    --red-drak: rgba(180, 46, 46, 0.9);
+    --black: #333;
+    --white: #fff;
+    --rgba-color: rgba(0,0,0,0.4);
+    --wheat: #f5deb2;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -26,7 +35,7 @@ html {
 }
 .navbar.sticky {
     padding: 15px 0;
-    background-color: crimson;
+    background-color: #dc143c;
 }
 .navbar  .logo span.showgames {
     color: #fff;
@@ -42,28 +51,28 @@ html {
     font-weight: 600;
 }
 .navbar .logo a span {
-    color: crimson;
+    color: var(--red-crimson);
     transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span {
-    color: #fff;
+    color: var(--white);
 }
 .navbar.sticky .menu li:hover a{
-    color: #fff;
+    color: var(--white);
 }
 .navbar .menu li{
     list-style: none;
     display: inline-block;
 }
 .navbar .menu li a{
-    color: #fff;
+    color: var(--white);
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s ease;
 }
 .navbar .menu li:hover a {
-    color: crimson;
+    color: var(--red-crimson);
 }
 /* home-section-styling */
 .home {
@@ -72,7 +81,7 @@ html {
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
-    color: #fff;
+    color: var(--white);
     min-height: 500px;
     font-family: "Ubuntu", sans-serif;
 }
@@ -97,17 +106,17 @@ html {
 }
 .home .discover-box a{
     display: inline-block;
-    background-color: crimson;
-    color: #fff;
+    background-color: var(--red-crimson);
+    color: var(--white);
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid crimson;
+    border: 2px solid var(--red-crimson);
     transition: all 0.3s ease;
 }
 .home .discover-box a:hover{
-    color: #fff;
+    color: var(--white);
     background: none;
 
 }
@@ -135,7 +144,7 @@ section{
     left: 50%;
     width: 240px;
     height: 3px;
-    background: #111;
+    background: var(--black);
     transform: translateX(-50%);
 }
 .profile .title::after{
@@ -144,9 +153,9 @@ section{
     bottom: -12px;
     left: 50%;
     font-size: 20px;
-    color: crimson;
+    color: var(--red-crimson);
     padding: 5px;
-    background: #fff;
+    background: var(--white);
     transform: translateX(-50%);
 }
 .profile .profile-content{
@@ -173,9 +182,225 @@ section{
     margin-bottom: 10px;
 }
 .profile .profile-content .right .text span{
-    color: crimson;
+    color: var(--red-crimson);
 }
 .profile .profile-content .right .text p{
     text-align: justify;
 }
+/* project description */
+/* title */
+.project-desc {
+    background-color: black;
+}
+.project-description-title {
+    color: var(--white);
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.project-desc .project-description-title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 240px;
+    height: 3px;
+    background: var(--white);
+    transform: translateX(-50%);
+}
+.project-desc .project-description-title::after {
+    content: "Click for information";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: var(--red-crimson);
+    padding: 5px;
+    background: black;
+    transform: translateX(-50%);
+}
+/* content */
+/*first rows */
+.project-desc .project-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.project-desc .project-content {
+    margin-left: 110px;
+    margin-right: 110px;
+}   
+.project-desc .project-content button:hover {
+    color: var(--white);
+    background-color: var(--red-crimson);
+}
+.project-desc .project-content button{
+    list-style: none;
+    color: var(--red-crimson);
+    font-family: "ubuntu",sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    background-color: var(--white);
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.project-desc .project-content  button{
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+}
 
+.project-desc .project-content .risk{
+    margin-left: 200px;
+}
+.project-desc .project-content .communication{
+    margin-right: 200px;
+}
+/* modal display */
+.modal.open { 
+    display: flex;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    /* display: flex; */
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal .modal-container {
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 578px;
+    background-color: var(--white);
+    position: relative;
+}
+.modal-container .title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100px;
+    background-color: var(--gray);
+    font-size: 40px;
+    font-family: "ubuntu",sans-serif;
+    font-weight: 500;
+    color: var(--white);
+    
+}
+.title-container .info-btn {
+    margin-right: 10px;
+    font-weight: 500;
+}
+.modal-container .close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background-color: var(--red-crimson);
+}
+.grid-table {
+    display: grid;
+    grid-template-rows: 150px 100px 150px;
+    font-family: 'ubuntu',sans-serif;
+}
+/* main aim */
+.grid-table .grid-style{
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.grid-style .main-aim {
+    display: flex;
+    padding-top: 5px;
+    justify-content: space-around;
+}
+.grid-style .main-aim .main-aim-right {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 145px;
+    background-color: var(--red-drak);
+    color: var(--white);
+    font-weight: 600;
+    font-size: 35px;
+}
+.grid-style .main-aim .main-aim-left {
+    width: 100%;
+    height: 145px;
+    background-color: var(--wheat);
+}
+.main-aim-left .definition {
+    padding: 5px;
+}
+.main-aim-left .definition h1{
+    font-size: 16px;
+}
+.main-aim-left .definition p{
+    font-size: 12px;
+}
+.main-aim-left .main-aim-detail {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.main-aim-left .main-aim-detail h1 {
+    font-size: 14px;
+}
+.main-aim-left .main-aim-detail p {
+    font-size: 12px;
+}
+/* goal title */
+.grid-style .goal-title {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px;
+}
+.grid-style .goal-title .goal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gray);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+.grid-style .goal-title .goal1 {
+    margin-left: -1px;
+}
+.grid-style .goal-title .goal3 {
+    margin-right: -1px;
+}
+/* goal information */
+.grid-style .goal-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px;
+}
+.goal-info .goal-desc h1 {
+    padding-left: 5px;
+    font-size: 16px;
+}
+.goal-info .goal-desc p{
+    padding-left: 5px;
+    font-size: 12px;
+}
+.goal-info .goal-detail h1{
+    padding-left: 20px;
+    font-size: 14px;
+}
+.goal-info .goal-detail p {
+    padding-left: 20px;
+    font-size: 12px;
+}
