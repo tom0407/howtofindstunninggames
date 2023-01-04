@@ -6,6 +6,9 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+html {
+    scroll-behavior: smooth;
+}
 .max-width{
     max-width: 1300px;
     padding: 0 80px;
@@ -15,6 +18,7 @@
 .navbar{
     position: fixed;
     width: 100%;
+    z-index: 999;
     padding: 30px 0;
     font-family: "Ubuntu", sans-serif;
     /* background-color: crimson; */
@@ -72,9 +76,6 @@
     min-height: 500px;
     font-family: "Ubuntu", sans-serif;
 }
-.about-border .box {
-
-}
 .home .max-width {
     margin: auto 0 auto 40px;
     
@@ -94,42 +95,87 @@
 .home .max-width .discover-box {
     margin-top: 30px;
 }
-.home .max-width .discover-box a{
+.home .discover-box a{
     display: inline-block;
-    padding: 16px;
-    font-size: 21px;
     background-color: crimson;
-    border-radius: 6px;
     color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
 }
-.home .max-width .discover-box a:hover {
-    background-color: rgba(220, 20, 60, 0.8);
+.home .discover-box a:hover{
+    color: #fff;
+    background: none;
+
 }
-/* team profile styling */
-.about-title {
+
+/* Team Profile Section Styling */
+section{
+    padding: 100px 0;
+}
+.profile{
+    font-family: 'Poppins', sans-serif;
+}
+.profile .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.profile .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 240px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+.profile .title::after{
+    content: "Personal Information";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+.profile .profile-content{
     display: flex;
-    justify-content: center;
-    padding-top: 80px;
-    font-size: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.profile .profile-content .left{
+    width: 45%;
+}
+.profile .profile-content .left img{
+    height: 400px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.profile .profile-content .right{
+    width: 55%;
+}
+.profile .profile-content .right .text{
+    font-size: 25px;
     font-weight: 600;
-    font-family: "ubuntu",sans-serif;
+    margin-bottom: 10px;
 }
-.about-subtitle {
-    display: flex;
-    justify-content: center;
-    font-size: 17px;
-    font-weight: 300;
-    font-family: "ubuntu",sans-serif;
+.profile .profile-content .right .text span{
     color: crimson;
 }
-.grid-container {
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: 500px 1fr ;
-    grid-template-rows: 350px 350px 350px 350px;
+.profile .profile-content .right .text p{
+    text-align: justify;
 }
-.grid-container .info {
-    margin: 20px;
-    background-size: 400px 300px;
-    background-repeat: no-repeat;
-}
+
