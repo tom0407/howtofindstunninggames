@@ -106,8 +106,8 @@
         <div class="max-width">
             <div class="project-description-title">Project Description</div>
             <div class="project-content">
-                <button class="button">Aim</button>
-                <button class="button">Plan & Progress</button>
+                <button class="button js-aim">Aim</button>
+                <button class="button js-plan">Plan & Progress</button>
                 <button class="button">Role</button>
             </div>
             <div class="project-content">
@@ -121,9 +121,10 @@
             </div>
         </div>
     </section>
-    <div class="modal">
+    <!-- aim modal -->
+    <div class="modal js-modal">
         <div class="modal-container">
-            <div class="close-btn">
+            <div class="close-btn js-close-aim">
                 <i class="ti-close"></i>
             </div>
             <div class="title-container">
@@ -191,6 +192,31 @@
                 </div>
             </div>
         </div>
+    </div>
+    <!-- plan & progress modal -->
+    <div class="modal-plan js-modal-plan">
+        <div class="modal-container-plan">
+            <div class="close-plan-btn js-close-plan">
+                <i class="ti-close"></i>
+            </div>
+            <div class="title-container-plan">
+                <i class="info-btn ti-folder"></i>
+                Plan & Progress   
+            </div>
+            <div class="content-layout">
+                <div class="subtitle">Role: </div>
+                <div class="grid-table-plan">
+                    <div class="header cuong-name">Project Manager</div>
+                    <div class="discription">This person is in charge of managing the whole project, including setting goals and milestones for every week, defining the scope of the project, generating a timetable, recording project progress, working with team members, analyzing risks, and ensuring that the project is finished on time and within budget.</div>
+                    <div class="header nguyen-name">UI Designer</div>
+                    <div class="discription">User Interface Designer is the person that builds the interfaces in software or computerize, focusing on look and styles. Designers aim to create interfaces that users can easily use the website and find pleasurable. The UI Designer also refers to graphical user and other forms, for example voice-controlled interfaces.</div>
+                    <div class="header loc-name">Front-end Developer</div>
+                    <div class="discription">A Front-end Developer is a person that uses HTML, CSS, and Javascript to create a new feature for the website to make it more attractive and convenient for the users, they also response to the structure and design of the website. Building the reusable code and optimizing the load of the website are also their jobs.</div>
+                    <div class="header long-name">SEO specialist</div>
+                    <div class="discription">An SEO Specialist's job includes optimizing copy and landing pages, developing and updating content, conducting continuing keyword research to uncover new marketing possibilities, and other duties. To come up with the most ideal SEO plan for the business, SEO Specialists must research and assess the benefits as well as limits of the game companies’ products and services, be able to analyze clients, and understand the competitors’ strengths and weaknesses. Those things help he/she to come up with a good strategy for the project.</div>
+                </div>    
+            </div>
+
     </div>
     <!-- javascript -->
     <script src="script.js"></script>
