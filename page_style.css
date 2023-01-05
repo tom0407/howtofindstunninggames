@@ -257,10 +257,10 @@ section{
 }
 
 .project-desc .project-content .risk{
-    margin-left: 200px;
+    margin-left: 182px;
 }
 .project-desc .project-content .communication{
-    margin-right: 200px;
+    margin-right: 182px;
 }
 /* modal display */
 .modal.open { 
@@ -407,7 +407,7 @@ section{
     padding-left: 20px;
     font-size: 12px;
 }
-/* plan & progress modal */
+/* role modal */
 .modal-plan.open {
     display: flex;
 }
@@ -461,16 +461,11 @@ section{
     margin-right: 10px;
     font-weight: 500;
 }
-/* plan&progress content */
+/* role content */
 .modal-container-plan .content-layout {
     padding-left: 5px;
     padding-right: 5px;
-}
-.modal-container-plan .content-layout .subtitle {
-    margin-left: 70px;
-    font-size: 25px;
-    font-weight: 600;
-    color: var(--red-crimson);
+    margin-top: 22px;
 }
 .modal-container-plan .content-layout .grid-table-plan {
     display: grid;
@@ -494,4 +489,164 @@ section{
     background-color: var(--wheat);
     padding: 10px;
     font-size: 14px;
+}
+/* modal-scope */
+.modal-tool.open{
+    display: flex;
+}
+.modal-tool {
+    font-family: "ubuntu",sans-serif;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    /* display: flex; */
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.5);
+}
+.modal-tool .modal-container-tool {
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 520px;
+    background-color: var(--white);
+    position: relative;
+}
+.modal-container-tool .scope-tool-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background-color: var(--red-crimson);
+}
+.modal-container-tool .scope-tool-btn:hover {
+    background-color: rgb(220, 20, 60,0.9);
+}
+.modal-container-tool .title-container-tool {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100px;
+    background-color: var(--gray);
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--white);
+}
+.modal-container-tool .tool-btn {
+    padding: 20px;
+}
+.grid-tool-content {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+.grid-tool-content .grid-right-side {
+    width: 300px;
+    height: 400px;
+    margin-left: 30px;
+    background-image: url("./images/tool.png");
+    background-size: cover;
+}
+.grid-tool-content .grid-left-side {
+    margin-left: 66px;
+    width: 400px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    background-color: var(--wheat);
+    padding: 20px   ;
+}
+/* testing modal*/
+.modal-testing.open {
+    display: flex;
+}
+.modal-testing {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    /* display: flex; */
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+.modal-testing .modal-container-testing {
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 580px;
+    background-color: var(--white);
+    position: relative;
+}
+/* close button */
+.modal-testing {
+    font-family: "ubuntu",sans-serif;
+}
+.modal-container-testing .close-testing-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background-color: var(--red-crimson);
+}
+.modal-container-testing .close-testing-btn:hover {
+    background-color: rgb(220, 20, 60,0.9);
+}
+/* title css */
+.modal-container-testing .title-container-testing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100px;
+    background-color: var(--gray);
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--white);
+ 
+}
+.title-container-testing .testing-btn {
+    margin-right: 10px;
+    font-weight: 500;
+}
+.modal-container-testing .testing-content-layout {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 22px;
+}
+.modal-container-testing .testing-content-layout .grid-table-testing {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 300px;
+    margin-top: 10px;
+}
+.testing-content-layout .grid-table-testing .header {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: var(--wheat);
+    background-color: var(--red-crimson);
+    margin-right: 40px;
+    margin-left: 40px;
+    font-weight: 600;
+}
+.testing-content-layout .grid-table-testing .discription {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    background-color: var(--wheat);
+    padding: 10px;
+    font-size: 14px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+.grid-table-testing .discription p {
+    margin-bottom: 64px;
 }

@@ -107,16 +107,16 @@
             <div class="project-description-title">Project Description</div>
             <div class="project-content">
                 <button class="button js-aim">Aim</button>
-                <button class="button js-plan">Plan & Progress</button>
-                <button class="button">Role</button>
+                <button class="button js-plan">Role</button>
+                <button class="button">Plan & Progress</button>
             </div>
             <div class="project-content">
                 <button class="button">Scope & Limit</button>
-                <button class="button">Tool & Technology</button>
-                <button class="button">Testing</button>
+                <button class="button js-tool">Tool & Technology</button>
+                <button class="button js-testing">Testing</button>
             </div>
             <div class="project-content">
-                <button class="button risk">Risk</button>
+                <button class="button risk">Risks</button>
                 <button class="button communication">Communication</button>
             </div>
         </div>
@@ -193,18 +193,17 @@
             </div>
         </div>
     </div>
-    <!-- plan & progress modal -->
+    <!-- role modal -->
     <div class="modal-plan js-modal-plan">
         <div class="modal-container-plan">
             <div class="close-plan-btn js-close-plan">
                 <i class="ti-close"></i>
             </div>
             <div class="title-container-plan">
-                <i class="info-btn ti-folder"></i>
-                Plan & Progress   
+                <i class="info-btn ti-user"></i>
+                Role 
             </div>
             <div class="content-layout">
-                <div class="subtitle">Role: </div>
                 <div class="grid-table-plan">
                     <div class="header cuong-name">Project Manager</div>
                     <div class="discription">This person is in charge of managing the whole project, including setting goals and milestones for every week, defining the scope of the project, generating a timetable, recording project progress, working with team members, analyzing risks, and ensuring that the project is finished on time and within budget.</div>
@@ -216,9 +215,51 @@
                     <div class="discription">An SEO Specialist's job includes optimizing copy and landing pages, developing and updating content, conducting continuing keyword research to uncover new marketing possibilities, and other duties. To come up with the most ideal SEO plan for the business, SEO Specialists must research and assess the benefits as well as limits of the game companies’ products and services, be able to analyze clients, and understand the competitors’ strengths and weaknesses. Those things help he/she to come up with a good strategy for the project.</div>
                 </div>    
             </div>
-
+        </div>
+    </div>
+    <!-- tool & technology -->
+    <div class="modal-tool js-modal-tool">
+        <div class="modal-container-tool">
+            <div class="scope-tool-btn js-close-tool">
+                <i class="ti-close"></i>
+            </div>
+            <div class="title-container-tool">
+                <i class="tool-btn ti-desktop"></i>
+                Tool & Technology 
+            </div>
+            <div class="grid-tool-content">
+                <div class="grid-right-side"></div>
+                <div class="grid-left-side">
+                    <p>We choose Visual Studio Code (VSC) as our IDE because it has a variety of useful extensions that increase productivity, such as the "live server" extension that makes it easier for users to view websites. We also utilize HTML&CSS to create the prototype. GitHub is the ideal option for us to collaborate as a team since it enables us to code without worrying about a random piece of code breaking the software via the function called "branch". Cuong had already become accustomed to Github, HTML& CSS, due to his work using these applications to create the Flappy Bird game with his team. Loc had already built a website while taking the front-end course "F8" so he was familiar with HTML and CSS on a fundamental level.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testing -->
+    <div class="modal-testing js-modal-testing">
+        <div class="modal-container-testing">
+            <div class="close-testing-btn js-close-testing">
+                <i class="ti-close"></i>
+            </div>
+            <div class="title-container-testing">
+                <i class="testing-btn ti-search"></i>
+                Testing
+            </div>
+            <div class="testing-content-layout">
+                <div class="grid-table-testing">
+                    <div class="header individual">
+                        Step 1
+                    </div>
+                    <div class="header team">
+                        Step 2
+                    </div>
+                    <div class="discription">The checking will be done by all team members, as this will provide more thorough accuracy and efficiency than one or two people doing the job. Regarding the Back-end, this will be the testing and testing stage of the internal scope, because the whole team will focus on handling errors in the code process, handling conflicts in the process of using back and forth between them. programming tools and programming languages. This inspection process will be carried out continuously from the moment our team starts creating the product until the finished product. We also will not stop this inspection during operation and put it into use later even though the number of problems to be handled will be less in the future.</div>
+                    <div class="discription"><p>Regarding the front-end, specifically the project's interface, for this part we will design a website with a user-friendly interface to provide an effective user experience. This initial look is of course part of our personal ideas and design style, so improvements will be made as soon as we do some surveys of about 100 testers including our family, teachers, friends and a few professional testers that we know and asked them to fill out a survey asking about the interface, efficiency, security and convenience of the application.</p></div>
+                </div>    
+            </div>
+        </div>
     </div>
     <!-- javascript -->
     <script src="script.js"></script>
 </body>
-</html>l
+</html>
