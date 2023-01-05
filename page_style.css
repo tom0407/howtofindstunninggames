@@ -1,0 +1,827 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+/* Reset CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+:root {
+    --gray: #343138;
+    --red-crimson: rgb(220, 20, 60);
+    --red-drak: rgba(180, 46, 46, 0.9);
+    --black: #333;
+    --white: #fff;
+    --rgba-color: rgba(0,0,0,0.4);
+    --wheat: #f5deb2;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+/* Navigation Bar Styling */
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: "Ubuntu", sans-serif;
+    /* background-color: crimson; */
+    transition: all 0.3s ease;
+}
+.navbar.sticky {
+    padding: 15px 0;
+    background-color: crimson;
+}
+.navbar  .logo span.showgames {
+    color: #fff;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .logo a span {
+    color: crimson;
+    transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span {
+    color: #fff;
+}
+.navbar.sticky .menu li:hover a{
+    color: #fff;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li:hover a {
+    color: crimson;
+}
+/* home-section-styling */
+.home {
+    display: flex;
+    background: url("images/banner.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    font-family: "Ubuntu", sans-serif;
+}
+.home .max-width {
+    margin: auto 0 auto 40px;
+    
+}
+.home .home-content .text-1{
+    font-size: 27px;
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0 ;
+}
+.home .max-width .discover-box {
+    margin-top: 30px;
+}
+.home .discover-box a{
+    display: inline-block;
+    background-color: crimson;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.home .discover-box a:hover{
+    color: #fff;
+    background: none;
+
+}
+
+/* Team Profile Section Styling */
+section{
+    padding: 100px 0;
+}
+.profile{
+    font-family: 'Poppins', sans-serif;
+}
+.profile .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.profile .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 240px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+.profile .title::after{
+    content: "Personal Information";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+.profile .profile-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.profile .profile-content .left{
+    width: 45%;
+}
+.profile .profile-content .left img{
+    height: 400px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.profile .profile-content .right{
+    width: 55%;
+}
+.profile .profile-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.profile .profile-content .right .text span{
+    color: crimson;
+}
+.profile .profile-content .right .text p{
+    text-align: justify;
+}
+.profile2{
+    font-family: 'Poppins', sans-serif;
+}
+.profile2 .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.profile2 .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 240px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+.profile2 .title::after{
+    content: "Group Process";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+.profile3{
+    font-family: 'Poppins', sans-serif;
+}
+.profile3 .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.profile3 .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 240px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+.profile3 .title::after{
+    content: "Career Plan";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+/* project description */
+/* title */
+.project-desc {
+    background-color: black;
+}
+.detail {
+    color: var(--white)!important;
+    margin-top: 20px;
+    margin-bottom: 20px !important;
+}
+.project-description-title {
+    color: var(--wheat);
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.project-desc .project-description-title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 240px;
+    height: 3px;
+    background: var(--white);
+    transform: translateX(-50%);
+}
+.project-desc .project-description-title::after {
+    content: "Click for information";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: var(--red-crimson);
+    padding: 5px;
+    background: black;
+    transform: translateX(-50%);
+}
+.project-desc .subproject::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 120px;
+    height: 3px;
+    background: var(--wheat);
+    transform: translateX(-50%);
+}
+.project-desc .subproject::after {
+    content: "Overview";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: var(--red-crimson);
+    padding: 5px;
+    background: black;
+    transform: translateX(-50%);
+}
+/* content */
+/*first rows */
+.project-desc .project-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.project-desc .project-content {
+    margin-left: 110px;
+    margin-right: 110px;
+}   
+/* overview btn */
+.project-desc .project-content button:hover {
+    color: var(--white);
+    background-color: var(--red-crimson);
+}
+.project-desc .project-content .overview-item {
+    background-color: var(--red-crimson);
+    color: var(--wheat);
+}
+.project-desc .project-content .overview-item:hover {
+    background-color: var(--wheat);
+    color: var(--red-crimson);
+}
+/* detail btn */
+.project-desc .project-content button{
+    list-style: none;
+    color: var(--red-crimson);
+    font-family: "ubuntu",sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    background-color: var(--white);
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.project-desc .project-content  button{
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+}
+
+.project-desc .project-content .risk{
+    margin-left: 182px;
+}
+.project-desc .project-content .communication{
+    margin-right: 182px;
+}
+/* modal display */
+.modal.open { 
+    display: flex;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    /* display: flex; */
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal .modal-container {
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 578px;
+    background-color: var(--white);
+    position: relative;
+}
+.modal-container .title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100px;
+    background-color: var(--gray);
+    font-size: 40px;
+    font-family: "ubuntu",sans-serif;
+    font-weight: 500;
+    color: var(--white);
+ 
+}
+.title-container .info-btn {
+    margin-right: 10px;
+    font-weight: 500;
+}
+.modal-container .close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background-color: var(--red-crimson);
+}
+.modal-container .close-btn:hover {
+    background-color: rgb(220, 20, 60,0.9);
+}
+.grid-table {
+    display: grid;
+    grid-template-rows: 150px 100px 150px;
+    font-family: 'ubuntu',sans-serif;
+}
+/* main aim */
+.grid-table .grid-style{
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.grid-style .main-aim {
+    display: flex;
+    padding-top: 5px;
+    justify-content: space-around;
+}
+.grid-style .main-aim .main-aim-right {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 145px;
+    background-color: var(--red-drak);
+    color: var(--white);
+    font-weight: 600;
+    font-size: 35px;
+}
+.grid-style .main-aim .main-aim-left {
+    width: 100%;
+    height: 145px;
+    background-color: var(--wheat);
+}
+.main-aim-left .definition {
+    padding: 5px;
+}
+.main-aim-left .definition h1{
+    font-size: 16px;
+}
+.main-aim-left .definition p{
+    font-size: 12px;
+}
+.main-aim-left .main-aim-detail {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.main-aim-left .main-aim-detail h1 {
+    font-size: 14px;
+}
+.main-aim-left .main-aim-detail p {
+    font-size: 12px;
+}
+/* goal title */
+.grid-style .goal-title {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px;
+}
+.grid-style .goal-title .goal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gray);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+.grid-style .goal-title .goal1 {
+    margin-left: -1px;
+}
+.grid-style .goal-title .goal3 {
+    margin-right: -1px;
+}
+/* goal information */
+.grid-style .goal-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px;
+}
+.goal-info .goal-desc h1 {
+    padding-left: 5px;
+    font-size: 16px;
+}
+.goal-info .goal-desc p{
+    padding-left: 5px;
+    font-size: 12px;
+}
+.goal-info .goal-detail h1{
+    padding-left: 20px;
+    font-size: 14px;
+}
+.goal-info .goal-detail p {
+    padding-left: 20px;
+    font-size: 12px;
+}
+/* role modal */
+.modal-plan.open {
+    display: flex;
+}
+.modal-plan {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+.modal-plan .modal-container-plan {
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 580px;
+    background-color: var(--white);
+    position: relative;
+}
+/* close button */
+.modal-plan {
+    font-family: "ubuntu",sans-serif;
+}
+.modal-container-plan .close-plan-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background-color: var(--red-crimson);
+}
+.modal-container-plan .close-plan-btn:hover {
+    background-color: rgb(220, 20, 60,0.9);
+}
+/* title css */
+.modal-container-plan .title-container-plan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100px;
+    background-color: var(--gray);
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--white);
+ 
+}
+.title-container-plan .info-btn {
+    margin-right: 10px;
+    font-weight: 500;
+}
+/* role content */
+.modal-container-plan .content-layout {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 22px;
+}
+.modal-container-plan .content-layout .grid-table-plan {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 100px 100px 100px 120px;
+    margin-top: 10px;
+}
+.content-layout .grid-table-plan .header {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: var(--wheat);
+    background-color: var(--red-crimson);
+}
+.content-layout .grid-table-plan .discription {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    background-color: var(--wheat);
+    padding: 10px;
+    font-size: 14px;
+}
+/* modal-scope */
+.modal-tool.open{
+    display: flex;
+}
+.modal-tool {
+    font-family: "ubuntu",sans-serif;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    /* display: flex; */
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.5);
+}
+.modal-tool .modal-container-tool {
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 520px;
+    background-color: var(--white);
+    position: relative;
+}
+.modal-container-tool .scope-tool-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background-color: var(--red-crimson);
+}
+.modal-container-tool .scope-tool-btn:hover {
+    background-color: rgb(220, 20, 60,0.9);
+}
+.modal-container-tool .title-container-tool {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100px;
+    background-color: var(--gray);
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--white);
+}
+.modal-container-tool .tool-btn {
+    padding: 20px;
+}
+.grid-tool-content {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+.grid-tool-content .grid-right-side {
+    width: 300px;
+    height: 400px;
+    margin-left: 30px;
+    background-image: url("./images/tool.png");
+    background-size: cover;
+}
+.grid-tool-content .grid-left-side {
+    margin-left: 66px;
+    width: 400px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    background-color: var(--wheat);
+    padding: 20px   ;
+}
+/* testing modal*/
+.modal-testing.open {
+    display: flex;
+}
+.modal-testing {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    /* display: flex; */
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+.modal-testing .modal-container-testing {
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 580px;
+    background-color: var(--white);
+    position: relative;
+}
+/* close button */
+.modal-testing {
+    font-family: "ubuntu",sans-serif;
+}
+.modal-container-testing .close-testing-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background-color: var(--red-crimson);
+}
+.modal-container-testing .close-testing-btn:hover {
+    background-color: rgb(220, 20, 60,0.9);
+}
+/* title css */
+.modal-container-testing .title-container-testing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100px;
+    background-color: var(--gray);
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--white);
+ 
+}
+.title-container-testing .testing-btn {
+    margin-right: 10px;
+    font-weight: 500;
+}
+.modal-container-testing .testing-content-layout {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 22px;
+}
+.modal-container-testing .testing-content-layout .grid-table-testing {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 300px;
+    margin-top: 10px;
+}
+.testing-content-layout .grid-table-testing .header {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: var(--wheat);
+    background-color: var(--red-crimson);
+    margin-right: 40px;
+    margin-left: 40px;
+    font-weight: 600;
+}
+.testing-content-layout .grid-table-testing .discription {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    background-color: var(--wheat);
+    padding: 10px;
+    font-size: 14px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+.grid-table-testing .discription p {
+    margin-bottom: 64px;
+}
+/* overview  topic*/
+.modal-topic.open {
+    display: flex;
+}
+.modal-topic {
+    /* display: flex; */
+    display: none;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: var(--rgba-color);
+    font-family: "ubuntu",sans-serif;
+}
+.modal-topic .modal-topic-container {
+    position: relative;
+    width: 900px;
+    min-height: 580px;
+    background-color: #fff;
+}
+.modal-topic-container .close-topic-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background-color: var(--red-crimson);
+}
+.modal-topic-container .close-topic-btn:hover {
+    background-color: var(--red-drak);
+}
+.modal-topic-container .modal-header i {
+    padding: 5px;
+}
+.modal-topic .modal-topic-container .modal-header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: var(--wheat);
+    background-color: var(--gray);
+    font-weight: 600;
+}
+.modal-topic-container .cotent-container {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    background-color: var(--wheat);
+}
+
+.modal-topic-container .cotent-container .left {
+    width: 300px;
+    height: 400px;
+    margin: 50px;
+    background: url("/front-end/howtofindstunninggames/images/idea.png") no-repeat center;
+    background-size: contain;
+}   
+
+.cotent-container .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+}
+.cotent-container .right .para {
+    padding: 20px;
+    background: var(--white);
+    margin-right: 10px;
+} 
