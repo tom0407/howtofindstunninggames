@@ -67,3 +67,18 @@ function hiddenTestingDoc(){
 
 testingBtn.addEventListener('click',showTestingDoc)
 modalTestingClose.addEventListener('click',hiddenTestingDoc)
+
+// topic
+const topicBtn = document.querySelector('.js-topic')
+const modalTopic = document.querySelector('.js-modal-topic')
+const modalTopicClose = document.querySelector('.js-close-topic')
+
+function showTopicDoc(){
+    modalTopic.classList.add('open')
+}
+function hiddenTopicDoc(){
+    modalTopic.classList.remove('open')
+}
+
+topicBtn.addEventListener('click',showTopicDoc)
+modalTopicClose.addEventListener('click', hiddenTopicDoc)

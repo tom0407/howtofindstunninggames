@@ -192,8 +192,13 @@ section{
 .project-desc {
     background-color: black;
 }
+.detail {
+    color: var(--white)!important;
+    margin-top: 20px;
+    margin-bottom: 20px !important;
+}
 .project-description-title {
-    color: var(--white);
+    color: var(--wheat);
     position: relative;
     text-align: center;
     font-size: 40px;
@@ -223,6 +228,27 @@ section{
     background: black;
     transform: translateX(-50%);
 }
+.project-desc .subproject::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 120px;
+    height: 3px;
+    background: var(--wheat);
+    transform: translateX(-50%);
+}
+.project-desc .subproject::after {
+    content: "Overview";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: var(--red-crimson);
+    padding: 5px;
+    background: black;
+    transform: translateX(-50%);
+}
 /* content */
 /*first rows */
 .project-desc .project-content{
@@ -234,10 +260,20 @@ section{
     margin-left: 110px;
     margin-right: 110px;
 }   
+/* overview btn */
 .project-desc .project-content button:hover {
     color: var(--white);
     background-color: var(--red-crimson);
 }
+.project-desc .project-content .overview-item {
+    background-color: var(--red-crimson);
+    color: var(--wheat);
+}
+.project-desc .project-content .overview-item:hover {
+    background-color: var(--wheat);
+    color: var(--red-crimson);
+}
+/* detail btn */
 .project-desc .project-content button{
     list-style: none;
     color: var(--red-crimson);
@@ -630,7 +666,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 40px;
     color: var(--wheat);
     background-color: var(--red-crimson);
     margin-right: 40px;
@@ -650,3 +686,76 @@ section{
 .grid-table-testing .discription p {
     margin-bottom: 64px;
 }
+/* overview  topic*/
+.modal-topic.open {
+    display: flex;
+}
+.modal-topic {
+    /* display: flex; */
+    display: none;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: var(--rgba-color);
+    font-family: "ubuntu",sans-serif;
+}
+.modal-topic .modal-topic-container {
+    position: relative;
+    width: 900px;
+    min-height: 580px;
+    background-color: #fff;
+}
+.modal-topic-container .close-topic-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background-color: var(--red-crimson);
+}
+.modal-topic-container .close-topic-btn:hover {
+    background-color: var(--red-drak);
+}
+.modal-topic-container .modal-header i {
+    padding: 5px;
+}
+.modal-topic .modal-topic-container .modal-header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: var(--wheat);
+    background-color: var(--gray);
+    font-weight: 600;
+}
+.modal-topic-container .cotent-container {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    background-color: var(--wheat);
+}
+
+.modal-topic-container .cotent-container .left {
+    width: 300px;
+    height: 400px;
+    margin: 50px;
+    background: url("/front-end/howtofindstunninggames/images/idea.png") no-repeat center;
+    background-size: contain;
+}   
+
+.cotent-container .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+}
+.cotent-container .right .para {
+    padding: 20px;
+    background: var(--white);
+    margin-right: 10px;
+} 
