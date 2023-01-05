@@ -82,3 +82,36 @@ function hiddenTopicDoc(){
 
 topicBtn.addEventListener('click',showTopicDoc)
 modalTopicClose.addEventListener('click', hiddenTopicDoc)
+// motivation 
+// initualize variable
+const motiBtn = document.querySelector('.js-motivation')
+const modalMoti = document.querySelector('.js-motivation-modal')
+const modalCloseMoti = document.querySelector('.js-close-motivation')
+
+// function to show motivation content
+function showMotiDoc(){
+    modalMoti.classList.add('open')
+}
+// function to close motivation 
+function hiddenMotiDoc(){
+    modalMoti.classList.remove('open')
+}
+
+motiBtn.addEventListener('click',showMotiDoc)
+modalCloseMoti.addEventListener('click',hiddenMotiDoc)
+
+const landsBtn = document.querySelector('.js-landscape')
+const modalLands = document.querySelector('.js-landscape-modal')
+const modalCloseLands = document.querySelector('.js-close-landscape')
+
+// function to show motivation content
+function showLandsDoc(){
+    modalLands.classList.add('open')
+}
+// function to close motivation 
+function hiddenLandsiDoc(){
+    modalLands.classList.remove('open')
+}
+
+landsBtn.addEventListener('click',showLandsDoc)
+modalCloseLands.addEventListener('click',hiddenLandsiDoc)
