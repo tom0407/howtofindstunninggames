@@ -6,6 +6,9 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+html {
+    scroll-behavior: smooth;
+}
 :root {
     --gray: #343138;
     --red-crimson: rgb(220, 20, 60);
@@ -14,9 +17,6 @@
     --white: #fff;
     --rgba-color: rgba(0,0,0,0.4);
     --wheat: #f5deb2;
-}
-html {
-    scroll-behavior: smooth;
 }
 .max-width{
     max-width: 1300px;
@@ -35,7 +35,7 @@ html {
 }
 .navbar.sticky {
     padding: 15px 0;
-    background-color: #dc143c;
+    background-color: crimson;
 }
 .navbar  .logo span.showgames {
     color: #fff;
@@ -51,28 +51,28 @@ html {
     font-weight: 600;
 }
 .navbar .logo a span {
-    color: var(--red-crimson);
+    color: crimson;
     transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span {
-    color: var(--white);
+    color: #fff;
 }
 .navbar.sticky .menu li:hover a{
-    color: var(--white);
+    color: #fff;
 }
 .navbar .menu li{
     list-style: none;
     display: inline-block;
 }
 .navbar .menu li a{
-    color: var(--white);
+    color: #fff;
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s ease;
 }
 .navbar .menu li:hover a {
-    color: var(--red-crimson);
+    color: crimson;
 }
 /* home-section-styling */
 .home {
@@ -81,7 +81,7 @@ html {
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
-    color: var(--white);
+    color: #fff;
     min-height: 500px;
     font-family: "Ubuntu", sans-serif;
 }
@@ -106,17 +106,17 @@ html {
 }
 .home .discover-box a{
     display: inline-block;
-    background-color: var(--red-crimson);
-    color: var(--white);
+    background-color: crimson;
+    color: #fff;
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid var(--red-crimson);
+    border: 2px solid crimson;
     transition: all 0.3s ease;
 }
 .home .discover-box a:hover{
-    color: var(--white);
+    color: #fff;
     background: none;
 
 }
@@ -144,7 +144,7 @@ section{
     left: 50%;
     width: 240px;
     height: 3px;
-    background: var(--black);
+    background: #111;
     transform: translateX(-50%);
 }
 .profile .title::after{
@@ -153,9 +153,9 @@ section{
     bottom: -12px;
     left: 50%;
     font-size: 20px;
-    color: var(--red-crimson);
+    color: crimson;
     padding: 5px;
-    background: var(--white);
+    background: #fff;
     transform: translateX(-50%);
 }
 .profile .profile-content{
@@ -182,10 +182,76 @@ section{
     margin-bottom: 10px;
 }
 .profile .profile-content .right .text span{
-    color: var(--red-crimson);
+    color: crimson;
 }
 .profile .profile-content .right .text p{
     text-align: justify;
+}
+.profile2{
+    font-family: 'Poppins', sans-serif;
+}
+.profile2 .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.profile2 .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 240px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+.profile2 .title::after{
+    content: "Group Process";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+.profile3{
+    font-family: 'Poppins', sans-serif;
+}
+.profile3 .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.profile3 .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 240px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+.profile3 .title::after{
+    content: "Career Plan";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
 }
 /* project description */
 /* title */
