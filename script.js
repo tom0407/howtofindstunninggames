@@ -145,3 +145,18 @@ function hiddenComDoc(){
 
 comBtn.addEventListener('click',showComDoc)
 modalCloseCom.addEventListener('click',hiddenComDoc)
+// plan-progress
+const progressBtn = document.querySelector('.js-progress')
+const modalProgress = document.querySelector('.js-modal-progress')
+const modalCloseProgress = document.querySelector('.js-close-progress')
+
+function showProgressDoc() {
+    modalProgress.classList.add('open')
+}
+
+function hiddenProgressDoc() {
+    modalProgress.classList.remove('open')
+}
+
+progressBtn.addEventListener('click',showProgressDoc)
+modalCloseProgress.addEventListener('click',hiddenProgressDoc)
