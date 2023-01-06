@@ -364,8 +364,64 @@ section{
 .project-desc .project-content .communication{
     margin-right: 182px;
 }
+/* skill & job */
+.skills-jobs {
+    font-family: "ubuntu",sans-serif;
+}
+.max-width .skill-title {
+    color: var(--black);
+}
+.skill-job-content {
+    display: flex;
+    margin-top: 5px;
+}
+.skill-job-layout{
+    padding: 20px;
+    background-color: var(--gray);
+    border-radius: 10px;
+}
+.skill-job-content .job {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 150px;
+    background-color: var(--red-crimson);
+}
+
+.skill-job-content .job-desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: var(--wheat);
+    margin-left: 5px;
+}
+.skills-jobs .sub-skill-title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 240px;
+    height: 3px;
+    background: var(--wheat);
+    transform: translateX(-50%);
+}
+.skills-jobs .sub-skill-title::after {
+    content: "For Next Pharse";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: var(--black);
+    padding: 5px;
+    background:  var(--white);
+    transform: translateX(-50%);
+}
 /* modal display */
-.modal.open { 
+.modal.open {
     display: flex;
 }
 .modal {
@@ -980,4 +1036,148 @@ section{
 }
 .modal-landscape-container  .content-container .left .second {
     margin-bottom: 20px;
+}
+/* modal risk coding */
+.modal-risk.open {
+    display: flex;
+}
+.modal-risk {
+    display: none;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.4);
+    font-family: "ubuntu",sans-serif;
+}
+
+.modal-risk-container {
+    position: relative;
+    width: 900px;
+    min-height: 580px;
+}
+.modal-risk-container .close-btn-risk {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background-color: var(--red-crimson);    
+}
+
+.modal-risk-container .close-btn-risk:hover {
+    background-color: var(--red-drak);
+}
+.modal-risk-container .risk-header {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gray);
+    color: var(--white);
+    font-size: 35px;
+    font-weight: 600;
+}
+.modal-risk-container .content-container {
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+    margin-top: 5px;
+}
+.modal-risk-container .content-container .right .title,
+.modal-risk-container .content-container  .left .title{
+    width: 440px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: var(--wheat);
+    background-color: var(--red-crimson);
+}
+
+.modal-risk-container .content-container .discription {
+    background-color: var(--wheat);
+    font-size: 12px;
+    margin-top: 5px;
+}
+.modal-risk-container .content-container .left .discription {
+    margin-right: 20px;
+
+}
+.modal-risk-container .content-container .left .discription li {
+    list-style-type: none;
+}
+.content-container  .left .discription li {
+    padding: 5px 10px 5px 10px;
+}
+.content-container .right .discription {
+    padding-bottom: 85px;
+}
+.content-container .right .discription li,
+.content-container .right .discription p {
+    padding: 5px 10px 5px 10px;
+}
+.content-container .right .discription li {
+    margin-left: 20px;
+}
+/* communication modal */
+.modal-communication.open {
+    display: flex;
+}
+.modal-communication {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: var(--rgba-color);
+    font-family: "ubuntu",sans-serif;
+}
+
+.modal-communication .modal-communication-container {
+    width: 900px;
+    height: 580px;
+    background-color: var(--white);
+    position: relative;
+}
+.modal-communication-container .communication-close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background-color: var(--red-crimson);
+}
+.modal-communication-container .communication-close-btn:hover {
+    background-color: var(--red-drak);
+}
+.modal-communication-container .communication-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    height: 100px;
+    background-color: var(--gray);
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--white);  
+}
+.modal-communication-container .com-timetable-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+
+}
+.modal-communication-container .com-timetable {
+    width: 400px;
+    height: 450px;
+    background-image: url("./images/timtable.jpg");
+    background-size: cover;
+    background-repeat:no-repeat ;
 }
