@@ -16,7 +16,7 @@
             <ul class="menu">
                 <li><a href="#profile">Team Profile</a></li>
                 <li><a href="#project-desc">Description</a></li>
-                <li><a href="#">Skills and Jobs</a></li>
+                <li><a href="#skills-jobs">Skills and Jobs</a></li>
                 <li><a href="#">Outcomes</a></li>
                 <li><a href="#">Reflection</a></li>
                 <li><a href="#">References</a></li>
@@ -154,11 +154,48 @@
                 <button class="button js-testing">Testing</button>
             </div>
             <div class="project-content">
-                <button class="button risk">Risks</button>
-                <button class="button communication">Communication</button>
+                <button class="button risk js-risk">Risks</button>
+                <button class="button communication js-com">Communication</button>
             </div>
         </div>
     </section>
+    <section class="skills-jobs" id="skills-jobs">
+        <div class="max-width">
+            <div class="project-description-title skill-title sub-skill-title">Skills & Jobs</div>
+            <div class="skill-job-layout">
+                <div class="skill-job-content">
+                    <div class="job">Project Manager</div>
+                    <div class="job-desc">This person is in charge of project management, which involves identifying project goals, developing a timetable, collaborating with team members, and ensuring that the project is completed on time and within budget. Furthermore, this person's role is to ensure that all members work well together and can resolve conflicts amongst members.</div>
+                </div>
+                <div class="skill-job-content">
+                    <div class="job">User Interface Designer</div>
+                    <div class="job-desc">This person is in charge of creating the visual design for the website, which includes the layout, color scheme, and typography. The website's interface should be accurate and welcoming so that people feel at ease and satisfied when using it.</div>
+                </div>
+                <div class="skill-job-content">
+                    <div class="job">Front-end Developer</div>
+                    <div class="job-desc">This person is responsible for converting the design into HTML, CSS, JavaScript, and PHP code that can be seen in a web browser. This individual must comprehend the designer's concepts and show them on a website with a smooth transition.</div>
+                </div>
+                <div class="skill-job-content">
+                    <div class="job">Back-end Developer</div>
+                    <div class="job-desc">This person is in charge of creating the server-side components of the website, such as the database and server-side logic. This individual must also be an expert in AI, machine learning, and algorithms and be able to apply them effectively to the analyzing system.</div>
+                </div>
+                <div class="skill-job-content">
+                    <div class="job">Content Creator</div>
+                    <div class="job-desc">This individual is in charge of developing and curating the website's content, which includes text, photographs, and videos.</div>
+                </div>
+                <div class="skill-job-content">
+                    <div class="job">SEO Specialist</div>
+                    <div class="job-desc">An SEO Specialist's responsibilities include optimizing copy and landing pages, creating and updating content, performing ongoing keyword research to identify new marketing opportunities, and other responsibilities. SEO Specialists must investigate and assess the benefits as well as limitations of the gaming firms' products and services, be able to analyze clients, and grasp the rivals' strengths and weaknesses in order to create the best SEO plan for the business. These factors assist him or her in developing an effective project approach.</div>
+                </div>
+                <div class="skill-job-content">
+                    <div class="job">Quality Assurance Tester</div>
+                    <div class="job-desc">This individual is in charge of testing the website to guarantee that it is free of bugs and problems and that it works properly on various devices and browsers.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 <!-- modal -->
     <!-- aim modal -->
     <div class="modal js-modal">
@@ -183,7 +220,7 @@
                             </div>
                             <div class="main-aim-detail">
                                 <h1>Detail</h1>
-                                <p>After asking website users to fill out a survey about their wants, the website will subsequently provide game recommendations based on the information they have provided, as determined by the AI system. Our website primarily serves people between the ages of 15 and 30, who are more likely than users of other ages to play video games. The launch of this website is scheduled for sometime in the next six months.</p>
+                                <p>After asking website users to fill out a survey about their wants, the website will subsequently provide game recommendations based on the information they have provided, as determined by the AI system. Our website primarily serves people between the ages of <span style="color: crimson;">15 and 30</span>, who are more likely than users of other ages to play video games. The launch of this website is scheduled for sometime in the next six months.</p>
                             </div>
                         </div>
                     </div>
@@ -220,11 +257,11 @@
                         <div class="goal-infomation">
                             <div class="goal-desc">
                                 <h1>Definition: </h1>
-                                <p>Build a professional user-centered design with a minimalistic website interface in 2 weeks.</p>
+                                <p>Build a professional user-centered design with aminimalistic website interface in 2 weeks.</p>
                             </div>
                             <div class="goal-detail">
                                 <h1>Detail: </h1>
-                                <p>An intuitive website interface aids in converting prospective website visitors into consumers. Because of its many practical characteristics, it improves a website's responsiveness, effectiveness, and accessibility in addition to its aesthetic appeal because of its numerous useful features. Displaying user information and their rights is what it means to be user-centered. For these reasons, we consider a decent user-centered design and website interface to be a crucial objective to accomplish with our website.</p>
+                                <p>An intuitive website interface aids in converting prospective website visitors into consumers. Because of its many practical characteristics, it improves a website's responsiveness, effectiveness, and accessibility in addition to its aesthetic appeal because of its numerous useful features. Displaying user information and their rights is what it means to be user-centered. For these reasons, we consider a decent user-centered design and website interfaces to be a crucial objective to accomplish with our website.</p>
                             </div>
                         </div>
                     </div>
@@ -339,6 +376,7 @@
             </div>
         </div>
     </div>
+    <!-- modal landscape -->
     <div class="modal-landscape js-landscape-modal">
         <div class="modal-landscape-container">
             <div class="exit-btn-landscape js-close-landscape">
@@ -361,6 +399,62 @@
                     </ul>
                     <p class="second">Our team had dicuss and together decided to choose which features of those websites are necessary for our website. We tried to apply some similar functions such as game recommendations, page to select types of game, forums,… However, the most special and unique feature that is only in our website is game recommendations by AI technology, which help users exploring the suitable games for them more flexibly and accurately.</p>
                 </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal - risks -->
+    <div class="modal-risk js-modal-risk">
+        <div class="modal-risk-container">
+            <div class="close-btn-risk js-close-risk">
+                <i class="ti-close"></i>
+            </div>
+            <div class="risk-header">
+                Risk
+            </div>
+            <div class="content-container">
+                <div class="left">
+                    <div class="title">
+                        <p>Back-End</p>
+                    </div>
+                    <div class="discription">
+                        <ul>
+                            <li>It is quite complicated to implement, apply and develop (improve, improve) an AI program based on user needs. (Quality) It can be mentioned that the ability to use the tools of the group is not thorough and professional (in-depth).</li>
+                            <li>AI development can use a variety of popular languages such as python, Java, C++, etc. Python was accessible early (first). The problem lies in two types of programming languages, Java and C++, because they have not had much access to these two types, so synthesizing and condensing it for use in the AI development process for the project will cost a lot. time.</li>
+                            <li>Devices: There is a possibility that some devices (in particular laptops) are overloaded during operation, having to process large amounts of data. The point here is when creating AI and running the program continuously to check the accuracy and errors will be encountered.</li>
+                            <li>The selection of tools for AI programming such as VScode, Eclipse IDE, Xcode (MacOS only), Pycharm, NotePad++, ATOM, etc; It's also a small problem that we have encountered because each tool has a different pros and cons.</li>
+                            <li>The basic thing to implement AI creation is to learn about algorithmic solutions, especially to understand and apply Machine Learning to AI programs. Machine Learning is an important branch of the field of AI, it is a field of study that allows computers to have the ability to improve themselves based on training data or on experience (what has been learned). learn). Machine learning can predict or make decisions on its own without being specifically programmed. To understand Machine Learning, we had a hard time learning about Workflow steps like Dataset, Preprocessing, Training model, Evaluating model, and Improve. Besides, it is most necessary to choose the classifications of Machine Learning such as Supervised Learning and Unsupervised Learning. It is quite difficult for us to learn and effectively apply the above concepts.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="title">
+                        <p>Front-End</p>
+                    </div>
+                    <div class="discription">
+                        <p>Website interface is also one of the difficult problems, which requires us to master 3 types of programming languages: HTML, CSS, and Javascript. Moreover, we also have to be familiar with frameworks like Bootstrap, Foundation, Backbone, AngularJS, and EmberJS to ensure the content is always displayed well on all different devices; or using the jQuery and LESS libraries. This took a lot of time for our team, as we had to directly gather a large amount of experience with the things I mentioned above during the project itself.</p>
+                        <p>Advertising is also a part of the problem that the interface design department has to deal with, receiving ads to maintain the project is inevitable, but if too many ads also appear simultaneously on the website interface, it will make users feel uncomfortable when experiencing our project.</p>
+                        <p>We had to consider 2 options to handle this problem:
+                            <ul>
+                                <li>Only receive a certain number of ads so that those ads appear on the website in a limited way and are within the calculation of the interface design department.</li>
+                                <li>There is no limit to the number of ads that will appear on the interface of the website, but the design department will have to shoulder a large amount of work in designing and calculating the arrangement so that it does not interfere. customer usage experience.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-communication js-com-modal">
+        <div class="modal-communication-container">
+            <div class="communication-close-btn js-close-com">
+                <i class="ti-close"></i>
+            </div>
+            <div class="communication-header">
+                <p>Communication</p>
+            </div>
+            <div class="com-timetable-container">
+                <div class="com-timetable"></div>
+            </div>
         </div>
     </div>
     <!-- javascript -->
