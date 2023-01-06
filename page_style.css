@@ -1111,14 +1111,14 @@ section{
     list-style-type: none;
 }
 .content-container  .left .discription li {
-    padding: 10px 5px 15px 5px;
+    padding: 5px 10px 5px 10px;
 }
 .content-container .right .discription {
-    padding-bottom: 55px;
+    padding-bottom: 85px;
 }
 .content-container .right .discription li,
 .content-container .right .discription p {
-    padding: 10px 5px 15px 5px;
+    padding: 5px 10px 5px 10px;
 }
 .content-container .right .discription li {
     margin-left: 20px;
