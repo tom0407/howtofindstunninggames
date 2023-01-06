@@ -387,6 +387,9 @@ section{
     width: 300px;
     height: 150px;
     background-color: var(--red-crimson);
+    font-size: 23px;
+    color: wheat;
+    font-weight: 600;
 }
 
 .skill-job-content .job-desc {
@@ -865,7 +868,7 @@ section{
     width: 300px;
     height: 400px;
     margin: 50px;
-    background: url("/front-end/howtofindstunninggames/images/idea.png") no-repeat center;
+    background: url("images/idea.png") no-repeat center;
     background-size: contain;
 }   
 
@@ -1180,4 +1183,69 @@ section{
     background-image: url("./images/timtable.jpg");
     background-size: cover;
     background-repeat:no-repeat ;
+}
+/* modal progress */
+.modal-progress.open {
+    display: flex;
+}   
+.modal-progress {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    justify-content: center;
+    font-family: "ubuntu",sans-serif;
+    background-color: var(--rgba-color);
+}
+.modal-progress-container {
+    position: relative;
+    margin-top: 4945px;
+    width: 900px;
+    height: fit-content;
+    background-color: var(--white);
+}
+.modal-progress-container .modal-progress-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background-color: var(--red-crimson);
+}
+.modal-progress-container .modal-progress-btn:hover {
+    background-color: var(--red-drak);
+}
+.modal-progress-container .progress-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: var(--gray);
+    color: var(--white);
+    font-size: 25px;
+    font-weight: 600;
+}
+.modal-progress-container .content-progress {
+    padding: 30px;
+}
+.modal-progress-container .content-progress .week-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    font-weight: 400;
+    color: var(--wheat);
+    font-size: 20px;
+    background-color: var(--red-crimson);
+    border-radius: 10px;
+}
+.modal-progress-container .content-progress .week-detail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 20px;
+    padding: 5px 30px 5px 30px;
+    background-color: var(--wheat);
+    border-radius: 10px;
 }
