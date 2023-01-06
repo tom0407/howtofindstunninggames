@@ -639,7 +639,8 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 15px;
+    font-size: 20px;
+    font-weight: 600;
     color: var(--wheat);
     background-color: var(--red-crimson);
 }
@@ -1144,7 +1145,7 @@ section{
 }
 
 .modal-communication .modal-communication-container {
-    width: 900px;
+    width: 1200px;
     height: 580px;
     background-color: var(--white);
     position: relative;
@@ -1163,7 +1164,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 900px;
+    width: 1200px;
     height: 100px;
     background-color: var(--gray);
     font-size: 30px;
@@ -1174,15 +1175,54 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 900px;
-
+    width: 1200px;
 }
 .modal-communication-container .com-timetable {
-    width: 400px;
-    height: 450px;
-    background-image: url("./images/timtable.jpg");
+    width: 410px;
+    height: 560px;
+    margin-top: -80px;
+    background-image: url("./images/timetable.png   ");
     background-size: cover;
     background-repeat:no-repeat ;
+}
+.modal-communication-container .issue-timetable {
+    width: 500px;
+    height: 360px;
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 90px;
+}
+.modal-communication-container .timetable-content {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.modal-communication-container .timetable-content .method {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: var(--red-crimson);
+    color: var(--wheat);
+    height: fit-content;
+}
+.modal-communication-container .timetable-content .content {
+    margin-left: 10px;
+    border-radius: 10px;
+    background-color: var(--wheat);
+    padding: 10px;
+    font-weight: normal;
+}
+.modal-communication-container .timetable-content .email {
+    margin-right: 5px;
+}
+.modal-communication-container .timetable-content .solution {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+.modal-communication-container .timetable-content .conclusion {
+    background-color: var(--black);
+    color: var(--white);
+    font-weight: normal;
 }
 /* modal progress */
 .modal-progress.open {
