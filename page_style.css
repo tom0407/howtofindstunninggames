@@ -1228,6 +1228,7 @@ section{
 }
 .modal-progress-container .content-progress {
     padding: 30px;
+    position: relative;
 }
 .modal-progress-container .content-progress .week-header {
     display: flex;
@@ -1248,4 +1249,17 @@ section{
     padding: 5px 30px 5px 30px;
     background-color: var(--wheat);
     border-radius: 10px;
+}
+.modal-progress-container .content-progress .back {
+    position: absolute;
+    text-decoration: none;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--red-crimson);
+    margin: 5px 5px 5px 0px;    
+}
+.modal-progress-container .content-progress .back a{
+    color: var(--white);
 }
