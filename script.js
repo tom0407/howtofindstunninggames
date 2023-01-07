@@ -160,3 +160,18 @@ function hiddenProgressDoc() {
 
 progressBtn.addEventListener('click',showProgressDoc)
 modalCloseProgress.addEventListener('click',hiddenProgressDoc)
+// scope 
+const scopeBtn = document.querySelector('.js-scope')
+const scopeModal = document.querySelector('.js-modal-scope')
+const scopeCloseModal = document.querySelector('.js-close-scope')
+
+function showScopeDoc() {
+    scopeModal.classList.add('open')
+}
+
+function hiddenScopeDoc() {
+    scopeModal.classList.remove('open')
+}
+
+scopeBtn.addEventListener('click',showScopeDoc)
+scopeCloseModal.addEventListener('click',hiddenScopeDoc)
