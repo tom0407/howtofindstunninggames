@@ -364,6 +364,131 @@ section{
 .project-desc .project-content .communication{
     margin-right: 182px;
 }
+/* reflection */
+.outcome {
+    background-color: var(--gray);
+}
+
+.outcome .outcome-container {
+    padding: 25px 50px;
+    background-color: wheat;
+    border-radius: 10px;
+}
+.outcome .outcome-container .header {
+    padding: 20px;
+    display: inline-block;
+    text-align: center;
+    justify-content: start;
+    font-size: 17px;
+    font-family: "unbuntu",sans-serif;
+    border-radius: 10px;
+    background-color: var(--red-crimson);
+    color: var(--wheat);
+    font-weight: 600;
+    margin-top: 15px;
+}
+.outcome .outcome-container .content {
+    padding: 20px;
+    background-color: var(--white);
+    margin-top: 15px;
+    border-radius: 10px;
+    color: var(--black);
+    margin-right: 60px;
+    margin-left: 60px;
+    font-family: "ubuntu", sans-serif;
+}
+.outcome .outcome-container .content li {
+    padding: 5px;
+    margin-left: 15px;
+}
+.outcome .outcome-title {
+    color: var(--wheat);
+}
+.outcome .sub-outcome::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 240px;
+    height: 3px;
+    background: var(--wheat);
+    transform: translateX(-50%);
+}
+
+.outcome .sub-outcome::after {
+    content: "https://wao-3.jimdosite.com/";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 16px;
+    color: var(--red-crimson);
+    padding: 5px;
+    background: var(--gray);
+    transform: translateX(-50%);
+}
+/* reflection */
+.reflection {
+    font-family: "ubuntu",sans-serif;
+}
+.reflection .reflect-title {
+    color: var(--black);
+}
+.reflection .sub-reflect::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 240px;
+    height: 3px;
+    background: var(--wheat);
+    transform: translateX(-50%);
+}
+.reflection .sub-reflect::after {
+    content: "WE ARE ONE";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: var(--black);
+    padding: 5px;
+    background: var(--white);
+    transform: translateX(-50%);
+}
+.reflection .reflect-container {
+    padding: 20px;
+    background-color: var(--gray);
+    border-radius: 6px;
+    /* rotate: 45%; */
+}
+.reflect-container .reflect-content{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.reflection .reflect-content .column-left{
+    width: 45%;
+}
+.reflect-content .column-left img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.reflect-content .column-right  {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+}
+.reflect-content .column-right h1 {
+    margin-bottom: 10px;
+    color: var(--wheat);
+}
+.reflect-content .column-right p {
+    color: var(--white);
+
+}
 /* skill & job */
 .skills-jobs {
     font-family: "ubuntu",sans-serif;
