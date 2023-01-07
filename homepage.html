@@ -9,14 +9,14 @@
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 </head>
-<body>
+<body style="position: relative;">
     <nav class="navbar">
         <div class="max-width">
             <div class="logo"><a href="#">Stunning <span>Games</span></a></div>
             <ul class="menu">
                 <li><a href="#profile">Team Profile</a></li>
                 <li><a href="#project-desc">Description</a></li>
-                <li><a href="#">Skills and Jobs</a></li>
+                <li><a href="#skills-jobs">Skills and Jobs</a></li>
                 <li><a href="#">Outcomes</a></li>
                 <li><a href="#">Reflection</a></li>
                 <li><a href="#">References</a></li>
@@ -140,23 +140,60 @@
                 <button class="button overview-item js-motivation">Motivation</button>
                 <button class="button overview-item js-landscape">Landscape</button>
             </div>
-            <div class="project-description-title detail">Detail Description</div>
+            <div class="project-description-title detail" id="detail-desc">Detail Description</div>
             <div class="project-content">
                 <button class="button js-aim">Aim</button>
                 <button class="button js-plan">Role</button>
-                <button class="button">Plan & Progress</button>
+                <button class="button js-progress">Plan & Progress</button>
             </div>
             <div class="project-content">
-                <button class="button">Scope & Limit</button>
+                <button class="button js-scope">Scope & Limit</button>
                 <button class="button js-tool">Tool & Technology</button>
                 <button class="button js-testing">Testing</button>
             </div>
             <div class="project-content">
-                <button class="button risk">Risks</button>
-                <button class="button communication">Communication</button>
+                <button class="button risk js-risk">Risks</button>
+                <button class="button communication js-com">Communication</button>
             </div>
         </div>
     </section>
+    <section class="skills-jobs" id="skills-jobs">
+        <div class="max-width">
+            <div class="project-description-title skill-title sub-skill-title">Skills & Jobs</div>
+            <div class="skill-job-layout">
+                <div class="skill-job-content">
+                    <div class="job">Project Manager</div>
+                    <div class="job-desc">This person is in charge of project management, which involves identifying project goals, developing a timetable, collaborating with team members, and ensuring that the project is completed on time and within budget. Furthermore, this person's role is to ensure that all members work well together and can resolve conflicts amongst members.</div>
+                </div>
+                <div class="skill-job-content">
+                    <div class="job">User Interface Designer</div>
+                    <div class="job-desc">This person is in charge of creating the visual design for the website, which includes the layout, color scheme, and typography. The website's interface should be accurate and welcoming so that people feel at ease and satisfied when using it.</div>
+                </div>
+                <div class="skill-job-content">
+                    <div class="job">Front-end Developer</div>
+                    <div class="job-desc">This person is responsible for converting the design into HTML, CSS, JavaScript, and PHP code that can be seen in a web browser. This individual must comprehend the designer's concepts and show them on a website with a smooth transition.</div>
+                </div>
+                <div class="skill-job-content">
+                    <div class="job">Back-end Developer</div>
+                    <div class="job-desc">This person is in charge of creating the server-side components of the website, such as the database and server-side logic. This individual must also be an expert in AI, machine learning, and algorithms and be able to apply them effectively to the analyzing system.</div>
+                </div>
+                <div class="skill-job-content">
+                    <div class="job">Content Creator</div>
+                    <div class="job-desc">This individual is in charge of developing and curating the website's content, which includes text, photographs, and videos.</div>
+                </div>
+                <div class="skill-job-content">
+                    <div class="job">SEO Specialist</div>
+                    <div class="job-desc">An SEO Specialist's responsibilities include optimizing copy and landing pages, creating and updating content, performing ongoing keyword research to identify new marketing opportunities, and other responsibilities. SEO Specialists must investigate and assess the benefits as well as limitations of the gaming firms' products and services, be able to analyze clients, and grasp the rivals' strengths and weaknesses in order to create the best SEO plan for the business. These factors assist him or her in developing an effective project approach.</div>
+                </div>
+                <div class="skill-job-content">
+                    <div class="job">Quality Assurance Tester</div>
+                    <div class="job-desc">This individual is in charge of testing the website to guarantee that it is free of bugs and problems and that it works properly on various devices and browsers.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 <!-- modal -->
     <!-- aim modal -->
     <div class="modal js-modal">
@@ -181,7 +218,7 @@
                             </div>
                             <div class="main-aim-detail">
                                 <h1>Detail</h1>
-                                <p>After asking website users to fill out a survey about their wants, the website will subsequently provide game recommendations based on the information they have provided, as determined by the AI system. Our website primarily serves people between the ages of 15 and 30, who are more likely than users of other ages to play video games. The launch of this website is scheduled for sometime in the next six months.</p>
+                                <p>After asking website users to fill out a survey about their wants, the website will subsequently provide game recommendations based on the information they have provided, as determined by the AI system. Our website primarily serves people between the ages of <span style="color: crimson;">15 and 30</span>, who are more likely than users of other ages to play video games. The launch of this website is scheduled for sometime in the next six months.</p>
                             </div>
                         </div>
                     </div>
@@ -218,11 +255,11 @@
                         <div class="goal-infomation">
                             <div class="goal-desc">
                                 <h1>Definition: </h1>
-                                <p>Build a professional user-centered design with a minimalistic website interface in 2 weeks.</p>
+                                <p>Build a professional user-centered design with aminimalistic website interface in 2 weeks.</p>
                             </div>
                             <div class="goal-detail">
                                 <h1>Detail: </h1>
-                                <p>An intuitive website interface aids in converting prospective website visitors into consumers. Because of its many practical characteristics, it improves a website's responsiveness, effectiveness, and accessibility in addition to its aesthetic appeal because of its numerous useful features. Displaying user information and their rights is what it means to be user-centered. For these reasons, we consider a decent user-centered design and website interface to be a crucial objective to accomplish with our website.</p>
+                                <p>An intuitive website interface aids in converting prospective website visitors into consumers. Because of its many practical characteristics, it improves a website's responsiveness, effectiveness, and accessibility in addition to its aesthetic appeal because of its numerous useful features. Displaying user information and their rights is what it means to be user-centered. For these reasons, we consider a decent user-centered design and website interfaces to be a crucial objective to accomplish with our website.</p>
                             </div>
                         </div>
                     </div>
@@ -337,6 +374,7 @@
             </div>
         </div>
     </div>
+    <!-- modal landscape -->
     <div class="modal-landscape js-landscape-modal">
         <div class="modal-landscape-container">
             <div class="exit-btn-landscape js-close-landscape">
@@ -359,6 +397,285 @@
                     </ul>
                     <p class="second">Our team had dicuss and together decided to choose which features of those websites are necessary for our website. We tried to apply some similar functions such as game recommendations, page to select types of game, forums,… However, the most special and unique feature that is only in our website is game recommendations by AI technology, which help users exploring the suitable games for them more flexibly and accurately.</p>
                 </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal - risks -->
+    <div class="modal-risk js-modal-risk">
+        <div class="modal-risk-container">
+            <div class="close-btn-risk js-close-risk">
+                <i class="ti-close"></i>
+            </div>
+            <div class="risk-header">
+                Risk
+            </div>
+            <div class="content-container">
+                <div class="left">
+                    <div class="title">
+                        <p>Back-End</p>
+                    </div>
+                    <div class="discription">
+                        <ul>
+                            <li>It is quite complicated to implement, apply and develop (improve, improve) an AI program based on user needs. (Quality) It can be mentioned that the ability to use the tools of the group is not thorough and professional (in-depth).</li>
+                            <li>AI development can use a variety of popular languages such as python, Java, C++, etc. Python was accessible early (first). The problem lies in two types of programming languages, Java and C++, because they have not had much access to these two types, so synthesizing and condensing it for use in the AI development process for the project will cost a lot. time.</li>
+                            <li>Devices: There is a possibility that some devices (in particular laptops) are overloaded during operation, having to process large amounts of data. The point here is when creating AI and running the program continuously to check the accuracy and errors will be encountered.</li>
+                            <li>The selection of tools for AI programming such as VScode, Eclipse IDE, Xcode (MacOS only), Pycharm, NotePad++, ATOM, etc; It's also a small problem that we have encountered because each tool has a different pros and cons.</li>
+                            <li>The basic thing to implement AI creation is to learn about algorithmic solutions, especially to understand and apply Machine Learning to AI programs. Machine Learning is an important branch of the field of AI, it is a field of study that allows computers to have the ability to improve themselves based on training data or on experience (what has been learned). learn). Machine learning can predict or make decisions on its own without being specifically programmed. To understand Machine Learning, we had a hard time learning about Workflow steps like Dataset, Preprocessing, Training model, Evaluating model, and Improve. Besides, it is most necessary to choose the classifications of Machine Learning such as Supervised Learning and Unsupervised Learning. It is quite difficult for us to learn and effectively apply the above concepts.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="title">
+                        <p>Front-End</p>
+                    </div>
+                    <div class="discription">
+                        <p>Website interface is also one of the difficult problems, which requires us to master 3 types of programming languages: HTML, CSS, and Javascript. Moreover, we also have to be familiar with frameworks like Bootstrap, Foundation, Backbone, AngularJS, and EmberJS to ensure the content is always displayed well on all different devices; or using the jQuery and LESS libraries. This took a lot of time for our team, as we had to directly gather a large amount of experience with the things I mentioned above during the project itself.</p>
+                        <p>Advertising is also a part of the problem that the interface design department has to deal with, receiving ads to maintain the project is inevitable, but if too many ads also appear simultaneously on the website interface, it will make users feel uncomfortable when experiencing our project.</p>
+                        <p>We had to consider 2 options to handle this problem:
+                            <ul>
+                                <li>Only receive a certain number of ads so that those ads appear on the website in a limited way and are within the calculation of the interface design department.</li>
+                                <li>There is no limit to the number of ads that will appear on the interface of the website, but the design department will have to shoulder a large amount of work in designing and calculating the arrangement so that it does not interfere. customer usage experience.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-communication js-com-modal">
+        <div class="modal-communication-container">
+            <div class="communication-close-btn js-close-com">
+                <i class="ti-close"></i>
+            </div>
+            <div class="communication-header">
+                <p>Communication</p>
+            </div>
+            <div class="com-timetable-container">
+                <div class="com-timetable"></div>
+                <div class="issue-timetable">
+                    what if we cannot communicate to our teammates?
+                    <div class="timetable-content">
+                        <div class="solution">
+                            <div class="method">
+                                Phone
+                            </div>
+                            <div class="content">
+                                We saved each member's phone number at the start of this project to ensure that our communication was successful. Therefore, if we can not contact our members by Messenger or MS Teams, we will call them as soon as possible.
+                            </div>
+                        </div>
+                        <div class="solution">
+                            <div class="method email">
+                                Email
+                            </div>
+                            <div class="content">
+                                If our members can not call the person who did not show up for a meeting after using the Phone Calling option. To alert him, we must send him a warning email via Gmail.
+                            </div>
+                        </div>
+                        Conclusion :
+                        <div class="solution">
+                            <div class="method conclusion">
+                                After using these two methods, if we still can not contact him or her, we would have to have an online meeting on Google Meet to discuss dropping him out or letting him or continue staying in the group and finish his duty. However, during the whole time working on this assignment. We have not experienced any situations in which we have had to use these two methods.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- plan & progress modal-->
+    <div class="modal-progress js-modal-progress">
+        <div class="modal-progress-container">
+            <div class="modal-progress-btn js-close-progress">
+                <i class="ti-close"></i>
+            </div>
+            <div class="progress-title">
+                Plan & Progress
+            </div>
+            <div class="content-progress">
+                <div class="week-header">
+                    Week 1 & Week 2
+                </div>
+                <!-- text below -->
+                <div class="week-detail">
+                    In the first 2 weeks, we spent time forming a group and getting objective ideas for our project. All members met and agreed to work together on a project, namely to create a game consulting website and use AI technology as a foundation. The group includes Cuong, Loc, Nguyen, and Long. On Tuesday, our team scheduled a face-to-face meeting to discuss the project topic for 3 hours. In the next 2 days, our task was to research the basic concepts of AI. This requires all members to be able to synthesize information as quickly and efficiently as possible for the project. But more specifically, Nguyen and Long researched how to build a website (on Google & Microsoft Edge); Cuong and Loc researched general game topics (on Google Play & App Store). We create an online meeting on Friday and finished learning about AI to build a website and find the game’s topics.
+                </div>
+                <div class="week-header">
+                    Week 3
+                </div>
+                <!-- text below -->
+                <div class="week-detail">
+                    That was the time to assign several work items to each member of the processing team. Besides, the whole group completed the necessary things to submit the early draft to the lecturer. This helped the team get feedback from the lecturer to improve our project. On Wednesday, the team leader created a document page on Google Docs so that members can work on the project together and prepare ideas from the provided rubric and sample. The next day, We identified the topic, scope, aim, communication methods, and risks, and assigned work to each member. The deadline has been set by the team leader and all team members have agreed to complete the work lists assigned by the leader. Finally, double-check and submit the project proposal before 23:59 Sunday (13/11).
+                </div>
+                <div class="week-header">
+                    Week 4
+                </div>
+                <!-- text below -->
+                <div class="week-detail">
+                    This is the week where all team members allow themselves to rest and be more comfortable at work because they are waiting for feedback from the lecturer. On the other hand, the group also messaged each other to discuss a little more about some upcoming plans and options to make the group's project more breakthrough and effective. We prepared and discussed which section should be improved based on the lecturer’s feedback.
+                </div>
+                <div class="week-header">
+                    Week 5
+                </div>
+                <!-- text below -->
+                <div class="week-detail">
+                    We decided to take a break and spend a couple of days thoroughly reading the comprehensive evaluation for the following project because we had already submitted the proposal in Week 4. Then, in order to get agreement on the following assignment's preparation, our leader called a face-to-face meeting. However, the problem we got was a lack of knowledge relative to coding. Then, We believe that 3 weeks of fluently using HTML, CSS, and GitHub could solve this problem; moreover, if having enough knowledge and technique, Javascript is an additional suggestion. We would develop and produce an actual prototype from weeks nine to twelve.
+                </div>
+                <div class="week-header">
+                    Week 6
+                </div>
+                <!-- text below -->
+                <div class="week-detail">
+                    Due to the need for a working prototype of the finding-game website for the upcoming project, this week. The first four days of this week were devoted primarily to HTML, The information dealt with how to utilize a live server and was associated with some common tags such as h1 , input , p, etc. Then we had two days to create a simple website and upload it to GitHub independently. By doing this, we were able to demonstrate to the team how the study process was progressing while also developing our HTML and GitHub skills.
+                </div>
+                <div class="week-header">
+                    Week 7
+                </div>
+                <!-- text below -->
+                <div class="week-detail">
+                    After establishing our HTML proficiency in week 7, we switched to CSS. After learning CSS for four days, we used the same approach as the previous week. We utilized the remainder of week 7 to add CSS to the HTML that we had already published to GitHub. After that, we held an online conference to assist each other in resolving issues like "how to center this div." and “how flexbox is distinct from one another?" After talking over these issues, we came up with several answers: Display: flex right: 50 transform: translateX(-50%) was the answer to the first query, and "flexbox would show a high performance with single div and grid operate efficiently with multi div" was the response to the second. The most effective technique to center a div is using a flexbox since just the item was moved when the solution was given, making it appear as though the div was not actually in the center. You must translate X (-50%) to center the object. We considered this to be a really advantageous technique as it helps us to improve our capacity to clone code from GitHub and raise the effectiveness of our cooperation.
+                </div>
+                <div class="week-header">
+                    Week 8
+                </div>
+                <!-- text below -->
+                <div class="week-detail">
+                    The prototype will be made in the next four weeks, therefore this is the last week for us to rehearse. A little project was a really helpful way for us to put everything we had learned into practice. Within a week, we created a little project, reviewed it, and provided comments to all the participants so they could improve it for the larger project. On the first day, we planned to spend two hours discussing how we would divide up the work over the next six days. One issue we had was a lack of ideas; we spent too much time on this and had no clue what we were doing or how our website's user interface should appear. Thus, we made the decision to construct a website that provides details about many animals. We structured our website's interface into four segments since our three main animal subjects were cats, dogs, and horses. The header was the first component, and Cuong was in charge of it since he wanted to integrate Javascript functionality that would allow him to transition between a bright and dark mode for the visitors' convenience. The second portion was made by Loc since he loves cats, Nguyen made the dog part, and Long made the horse part. After 5 days for this part, we had an online meeting for giving feedback and answering any questions among us.
+                </div>
+                <div class="week-header">
+                    Week 9
+                </div>
+                <!-- text below -->
+                <div class="week-detail">
+                    Despite the fact that the school provided us a Christmas vacation this week, we opted not to take it easy and instead continued to develop the prototype and prepare for the final report. On Tuesday, we held an online meeting to list all of the tasks that we need to do before the end of the semester and allocate them to each member. We finished many sections of the report after working very hard for four days, such as personal information, career plan, topic description, motivation, landscape, aims, roles, tools and technologies, testing, risks, and communication, but there were still many mistakes in testing, communication, tools and technologies, and many tasks that had not been completed. We all decided over the weekend that we should take a two-day vacation to rest and celebrate the new year with our families, so we postponed the procedure until next week.
+                </div>
+                <div class="week-header">
+                    Week 10
+                </div>
+                <!-- text below -->
+                <div class="week-detail">
+                    This has been a very busy week for our team because we needed to complete 10 tasks by the end of the week, including adjusting our mistakes from previous tasks, finishing the Group Process, Plan and Progress, Skills and Jobs, Scope and Limits, Project Outcomes, building the prototype and website for our report, and designing the presentation. Each member was allocated a piece of the report, and we needed to finish it by the following week. From Wednesday through Sunday, we concentrated on completing things that required more than one person and attended school every day except Sunday to do so. Cuong and Loc were in charge of developing the website for our report, while Nguyen and Long were in charge of creating the prototype. After completing the prototype, we collaborated to create the presentation slide as well as the Scope and Limits and Project Outcomes sections of the report. We may just take a few hours off before continuing to prepare for our presentation rehearsal next week.
+                </div>
+                <div class="week-header">
+                    Week 11
+                </div>
+                <!-- text below -->
+                <div class="week-detail">
+                    This is the final week of our semester project. On Monday, we practiced our presentations in preparation for the grading presentation in the tutorial session on Wednesday. After we submitted the presentation, we concentrated entirely on revising our report and evaluating our website to see if there were any flaws. On Sunday, we double-checked the report and filed it on Canvas, bringing our semester to a close.
+                </div>
+                <div class="back">
+                    <a href="#detail-desc">Back</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-scope js-modal-scope">
+        <div class="modal-scope-container" >
+            <div class="scope-close-btn js-close-scope">
+                <i class="ti-close"></i>
+            </div>
+            <div class="scope-title">
+                <p>Scope & Limit</p>
+            </div>
+            <div class="outline">
+                <p>Outline :</p>
+            </div>
+            <div class="achievement"></div>
+            <div class="outline">
+                <p>Detail :</p>
+            </div>
+            <div class="container">
+                <div class="homepage">
+                    <div class="img">
+                        <div><img src="./images/homepage.png" alt=""></div>
+                        <div><img src="./images/findinggame.png" alt=""></div>
+                        <div><img src="./images/typeofgame.png" alt=""></div>
+                        <div><img src="./images/topchart.png" alt=""></div>
+                    </div>
+                    <div class="content">
+                        In our homepage, we have built all of the function that we have described in our scrope section that is the ‘Find your game’ section, the ‘Types of games’ section, the ‘Top charts’ section and the ‘Support’ section. 
+                    </div>
+                </div>
+                <div class="homepage">
+                    <div class="content-l">
+                        We have applied all types of question that is defined the personality of the customer to our prototype website.
+                    </div>
+                    <div class="img-r">
+                        <img src="./images/question.png" alt="">
+                    </div>
+                </div>
+                <div class="homepage">
+                    <div class="img-l">
+                        <img src="./images/question.png" alt="">
+                    </div>
+                    <div class="content-r">
+                        We have applied all types of question that is defined the personality of the customer to our prototype website.
+                    </div>
+                </div>
+                <div class="homepage">
+                    <div class="content-l">
+                        The game page website would display the game’s ratings by the users, the age available for the players, the size and the description.
+                    </div>
+                    <div class="img-r">
+                        <img src="./images/gamedetail.png" alt="">
+                    </div>
+                </div>
+                <div class="homepage">
+                    <div class="img">
+                        <div><img src="./images/action.png" alt=""></div>
+                        <div><img src="./images/sport.png" alt=""></div>
+                        <div><img src="./images/puzzle.png" alt=""></div>
+                        <div><img src="./images/adventure.png" alt=""></div>
+                    </div>
+                    <div class="content">
+                        We also have achieved all of the work to build the ‘Types Of Games’ section and we also created the list of games by categories.
+When the page display the list of games, which of the game’s block also show the game’s developer and the game’s platform.
+
+                    </div>
+                </div>
+                <div class="homepage">
+                    <div class="content-l">
+                        We also have achieved all of the work for the Top Charts section.
+                    </div>
+                    <div class="img">
+                        <div><img src="./images/chart.png" alt=""></div>
+                        <div><img src="./images/gamekind.png" alt=""></div>
+                        <div><img src="./images/ad.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="homepage">
+                    <div class="img-l">
+                        <img src="./images/pubg.png" alt="">
+                    </div>
+                    <div class="content-r">
+                        We can not apply AI technology due to the lack of time to study and adapt the AI technology knowlegde, moreover, we absolutely have no exprerience in this area. Most of the time we had used in this project was studying how to code HTML, CSS and Javascript.
+ 
+Moreover, our team also have designed the look of the result after the AI suggestion, when the result show up
+
+                    </div>
+                </div>
+                <div class="homepage">
+                    <div class="content-l" style="width: 100%;" >
+                        <div style="font-weight: 600; font-size: 20px;">How to find our website: </div>
+                        This is our website link: https://wao-3.jimdosite.com/
+                        <div style="font-weight: 600; font-size: 20px;">Save games to users’ favorite list:</div>
+                        We can not complete this section due to lack of time available.
+                        <div style="font-weight: 600; font-size: 20px;">Entering and Managing game’s database:</div>
+                        We can not complete this section due to lack of time available. At the moment, we do not have any client to corporate with us to give their game’s database
+                    </div>
+                    <div class="content-r">
+                        <div style="font-weight: 600; font-size: 20px;">Sign in/ Sign up/ Sign out:</div>
+                        We can not complete this section due to lack of time available and we can not have the database of the users.
+                        <div style="font-weight: 600; font-size: 20px;">Prevent spam and harmful advertisements:</div>
+                        We can not complete this section due to lack of time available.
+                        <div style="font-weight: 600; font-size: 20px;">Manage companies’ information and contact details:</div>
+                        We can not complete this section due to lack of time available. At the moment, we also do not have any game companies to corporate with us to give their client’s personal information database.
+                    </div>
+                </div>
+                <div class="back">
+                    <a href="#detail-desc">Back</a>
+                </div>
+            </div>
         </div>
     </div>
     <!-- javascript -->

@@ -10,19 +10,18 @@ $(document).ready(function(){
 });
 // openAim 
 const aimBtn = document.querySelector('.js-aim')
-const modal = document.querySelector('.js-modal')
-const modalClose = document.querySelector('.js-close-aim')
+const modalAim = document.querySelector('.js-modal')
+const modalCloseAim = document.querySelector('.js-close-aim')
 
 function showAimDoc(){
-    modal.classList.add('open')
+    modalAim.classList.add('open')
 }
 function hiddenAimDoc(){
-    modal.classList.remove('open')
+    modalAim.classList.remove('open')
 }
 
-aimBtn.addEventListener('click', showAimDoc)
-modalClose.addEventListener('click', hiddenAimDoc)
-
+aimBtn.addEventListener('click',showAimDoc)
+modalCloseAim.addEventListener('click',hiddenAimDoc)
 // plan & progress
 const planBtn = document.querySelector('.js-plan')
 const modalPlan = document.querySelector('.js-modal-plan')
@@ -104,14 +103,75 @@ const landsBtn = document.querySelector('.js-landscape')
 const modalLands = document.querySelector('.js-landscape-modal')
 const modalCloseLands = document.querySelector('.js-close-landscape')
 
-// function to show motivation content
+// function to show Landscape content
 function showLandsDoc(){
     modalLands.classList.add('open')
 }
-// function to close motivation 
+// function to close landscape
 function hiddenLandsiDoc(){
     modalLands.classList.remove('open')
 }
 
 landsBtn.addEventListener('click',showLandsDoc)
 modalCloseLands.addEventListener('click',hiddenLandsiDoc)
+
+//Risk button
+const riskBtn = document.querySelector('.js-risk')
+const modalRisk = document.querySelector('.js-modal-risk')
+const modalCloseRisk = document.querySelector('.js-close-risk')
+
+function showRiskDoc(){
+    modalRisk.classList.add('open')
+}
+
+function hiddenRiskDoc(){
+    modalRisk.classList.remove('open')
+}
+
+riskBtn.addEventListener('click',showRiskDoc)
+modalCloseRisk.addEventListener('click',hiddenRiskDoc)
+// communication
+const comBtn = document.querySelector('.js-com')
+const modalCom = document.querySelector('.js-com-modal')
+const modalCloseCom = document.querySelector('.js-close-com')
+
+function showComDoc(){
+    modalCom.classList.add('open')
+}
+
+function hiddenComDoc(){
+    modalCom.classList.remove('open')
+}
+
+comBtn.addEventListener('click',showComDoc)
+modalCloseCom.addEventListener('click',hiddenComDoc)
+// plan-progress
+const progressBtn = document.querySelector('.js-progress')
+const modalProgress = document.querySelector('.js-modal-progress')
+const modalCloseProgress = document.querySelector('.js-close-progress')
+
+function showProgressDoc() {
+    modalProgress.classList.add('open')
+}
+
+function hiddenProgressDoc() {
+    modalProgress.classList.remove('open')
+}
+
+progressBtn.addEventListener('click',showProgressDoc)
+modalCloseProgress.addEventListener('click',hiddenProgressDoc)
+// scope 
+const scopeBtn = document.querySelector('.js-scope')
+const scopeModal = document.querySelector('.js-modal-scope')
+const scopeCloseModal = document.querySelector('.js-close-scope')
+
+function showScopeDoc() {
+    scopeModal.classList.add('open')
+}
+
+function hiddenScopeDoc() {
+    scopeModal.classList.remove('open')
+}
+
+scopeBtn.addEventListener('click',showScopeDoc)
+scopeCloseModal.addEventListener('click',hiddenScopeDoc)

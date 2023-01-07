@@ -364,8 +364,67 @@ section{
 .project-desc .project-content .communication{
     margin-right: 182px;
 }
+/* skill & job */
+.skills-jobs {
+    font-family: "ubuntu",sans-serif;
+}
+.max-width .skill-title {
+    color: var(--black);
+}
+.skill-job-content {
+    display: flex;
+    margin-top: 5px;
+}
+.skill-job-layout{
+    padding: 20px;
+    background-color: var(--gray);
+    border-radius: 10px;
+}
+.skill-job-content .job {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 150px;
+    background-color: var(--red-crimson);
+    font-size: 23px;
+    color: wheat;
+    font-weight: 600;
+}
+
+.skill-job-content .job-desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: var(--wheat);
+    margin-left: 5px;
+}
+.skills-jobs .sub-skill-title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 240px;
+    height: 3px;
+    background: var(--wheat);
+    transform: translateX(-50%);
+}
+.skills-jobs .sub-skill-title::after {
+    content: "For Next Pharse";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: var(--black);
+    padding: 5px;
+    background:  var(--white);
+    transform: translateX(-50%);
+}
 /* modal display */
-.modal.open { 
+.modal.open {
     display: flex;
 }
 .modal {
@@ -580,7 +639,8 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 15px;
+    font-size: 20px;
+    font-weight: 600;
     color: var(--wheat);
     background-color: var(--red-crimson);
 }
@@ -809,7 +869,7 @@ section{
     width: 300px;
     height: 400px;
     margin: 50px;
-    background: url("/front-end/howtofindstunninggames/images/idea.png") no-repeat center;
+    background: url("images/idea.png") no-repeat center;
     background-size: contain;
 }   
 
@@ -980,4 +1040,398 @@ section{
 }
 .modal-landscape-container  .content-container .left .second {
     margin-bottom: 20px;
+}
+/* modal risk coding */
+.modal-risk.open {
+    display: flex;
+}
+.modal-risk {
+    display: none;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.4);
+    font-family: "ubuntu",sans-serif;
+}
+
+.modal-risk-container {
+    position: relative;
+    width: 900px;
+    min-height: 580px;
+}
+.modal-risk-container .close-btn-risk {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background-color: var(--red-crimson);    
+}
+
+.modal-risk-container .close-btn-risk:hover {
+    background-color: var(--red-drak);
+}
+.modal-risk-container .risk-header {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gray);
+    color: var(--white);
+    font-size: 35px;
+    font-weight: 600;
+}
+.modal-risk-container .content-container {
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+    margin-top: 5px;
+}
+.modal-risk-container .content-container .right .title,
+.modal-risk-container .content-container  .left .title{
+    width: 440px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: var(--wheat);
+    background-color: var(--red-crimson);
+}
+
+.modal-risk-container .content-container .discription {
+    background-color: var(--wheat);
+    font-size: 12px;
+    margin-top: 5px;
+}
+.modal-risk-container .content-container .left .discription {
+    margin-right: 20px;
+
+}
+.modal-risk-container .content-container .left .discription li {
+    list-style-type: none;
+}
+.content-container  .left .discription li {
+    padding: 5px 10px 5px 10px;
+}
+.content-container .right .discription {
+    padding-bottom: 85px;
+}
+.content-container .right .discription li,
+.content-container .right .discription p {
+    padding: 5px 10px 5px 10px;
+}
+.content-container .right .discription li {
+    margin-left: 20px;
+}
+/* communication modal */
+.modal-communication.open {
+    display: flex;
+}
+.modal-communication {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: var(--rgba-color);
+    font-family: "ubuntu",sans-serif;
+}
+
+.modal-communication .modal-communication-container {
+    width: 1200px;
+    height: 580px;
+    background-color: var(--white);
+    position: relative;
+}
+.modal-communication-container .communication-close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background-color: var(--red-crimson);
+}
+.modal-communication-container .communication-close-btn:hover {
+    background-color: var(--red-drak);
+}
+.modal-communication-container .communication-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    height: 100px;
+    background-color: var(--gray);
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--white);  
+}
+.modal-communication-container .com-timetable-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+}
+.modal-communication-container .com-timetable {
+    width: 410px;
+    height: 560px;
+    margin-top: -80px;
+    background-image: url("./images/timetable.png   ");
+    background-size: cover;
+    background-repeat:no-repeat ;
+}
+.modal-communication-container .issue-timetable {
+    width: 500px;
+    height: 360px;
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 90px;
+}
+.modal-communication-container .timetable-content {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.modal-communication-container .timetable-content .method {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: var(--red-crimson);
+    color: var(--wheat);
+    height: fit-content;
+}
+.modal-communication-container .timetable-content .content {
+    margin-left: 10px;
+    border-radius: 10px;
+    background-color: var(--wheat);
+    padding: 10px;
+    font-weight: normal;
+}
+.modal-communication-container .timetable-content .email {
+    margin-right: 5px;
+}
+.modal-communication-container .timetable-content .solution {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+.modal-communication-container .timetable-content .conclusion {
+    background-color: var(--black);
+    color: var(--white);
+    font-weight: normal;
+}
+/* modal progress */
+.modal-progress.open {
+    display: flex;
+}   
+.modal-progress {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    justify-content: center;
+    font-family: "ubuntu",sans-serif;
+    background-color: var(--rgba-color);
+}
+.modal-progress-container {
+    position: relative;
+    margin-top: 4945px;
+    width: 900px;
+    height: fit-content;
+    background-color: var(--white);
+}
+.modal-progress-container .modal-progress-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background-color: var(--red-crimson);
+}
+.modal-progress-container .modal-progress-btn:hover {
+    background-color: var(--red-drak);
+}
+.modal-progress-container .progress-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: var(--gray);
+    color: var(--white);
+    font-size: 25px;
+    font-weight: 600;
+}
+.modal-progress-container .content-progress {
+    padding: 30px;
+    position: relative;
+}
+.modal-progress-container .content-progress .week-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    font-weight: 400;
+    color: var(--wheat);
+    font-size: 20px;
+    background-color: var(--red-crimson);
+    border-radius: 10px;
+}
+.modal-progress-container .content-progress .week-detail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 20px;
+    padding: 5px 30px 5px 30px;
+    background-color: var(--wheat);
+    border-radius: 10px;
+}
+.modal-progress-container .content-progress .back {
+    position: absolute;
+    text-decoration: none;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--red-crimson);
+    margin: 5px 5px 5px 0px;    
+}
+.modal-progress-container .content-progress .back a{
+    color: var(--white);
+}
+/* modal scope */
+.modal-scope.open {
+    display: flex;
+}
+.modal-scope {
+    position: absolute;
+    display: none;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0; 
+    justify-content: center; 
+    background-color: var(--rgba-color);
+    font-family: "ubuntu",sans-serif;
+}
+
+.modal-scope-container {
+    position: relative;
+    width: 1200px;
+    height: 2000px;
+    background-color: var(--white);
+    margin-top: 4945px;
+}
+.scope-close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--red-crimson);
+    padding: 10px;
+}
+.scope-close-btn:hover {
+    background-color: var(--red-drak);
+}
+.modal-scope-container .scope-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: var(--gray);
+    font-size: 30px;
+    color: var(--white);
+    font-weight: 600;
+}
+.modal-scope-container .container {
+    position: relative;
+} 
+.modal-scope-container .outline {
+    display: inline-block;
+    padding: 30px;
+    margin: 40px;
+    background-color: var(--wheat);
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600px;
+}
+
+.modal-scope-container .achievement{
+    margin-left: 350px;
+    background: url("./images/achievement.png");
+    height: 666px;
+    width: 600px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: -90px;
+}
+
+.modal-scope-container .container {
+    width: 1200px;
+    height: fit-content;
+}
+
+.container .homepage {
+    display: flex;
+    flex-direction: row;
+}
+.container .img {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 150px 150px;
+}
+.container .img img {
+    width: 300px;
+}
+.container .content {
+    width: 50%;
+    height: 300px;
+
+    margin-top: 8px;
+    border-radius: 10px;
+    background-color: var(--wheat);
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 20px;
+}
+.container .content-l {
+    width: 50%;
+    height: 300px;
+
+    margin-top: 8px;
+    border-radius: 10px;
+    background-color: var(--wheat);
+    padding: 20px;
+}
+.container .img-r img {
+    width: 600px;
+}
+
+.hompage .img-l  {
+    width: 600px;
+}
+.container .img-l img {
+    width: 600px;
+}
+.container .content-r {
+    height: 300px;
+    background-color: var(--wheat);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 8px;
+}
+.container .back {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 20px;
+    background-color: var(--red-crimson);
+    border-radius: 10px;
+}
+.container .back a {
+    color: var(--black);
 }
