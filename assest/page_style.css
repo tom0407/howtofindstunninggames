@@ -834,7 +834,7 @@ section{
     width: 300px;
     height: 500px;
     margin-left: 30px;
-    background-image: url("./images/tool.png");
+    background-image: url("./images/modal/detail/tool&technology/tool.png");
     background-size: cover;
 }
 .grid-tool-content .grid-left-side {
@@ -866,7 +866,7 @@ section{
 .modal-testing .modal-container-testing {
     width: 900px;
     max-width: calc(100% - 32px);
-    min-height: 580px;
+    height: 720px;
     background-color: var(--white);
     position: relative;
 }
@@ -926,7 +926,9 @@ section{
 }
 .testing-content-layout .grid-table-testing .discription {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    height: fit-content;
     margin-top: 5px;
     background-color: var(--wheat);
     padding: 10px;
@@ -934,9 +936,15 @@ section{
     margin-right: 40px;
     margin-left: 40px;
 }
-.grid-table-testing .discription p {
-    margin-bottom: 64px;
+.testing-content-layout .grid-table-testing .discription ul {
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
+.testing-content-layout .grid-table-testing .discription li {
+    margin: 5px;
+}
+
 /* overview  topic*/
 .modal-topic.open {
     display: flex;
@@ -994,7 +1002,7 @@ section{
     width: 300px;
     height: 400px;
     margin: 50px;
-    background: url("images/idea.png") no-repeat center;
+    background: url("./images/modal/overview/idea.png") no-repeat center;
     background-size: contain;
 }   
 
@@ -1303,11 +1311,12 @@ section{
     width: 1200px;
 }
 .modal-communication-container .com-timetable {
-    width: 410px;
-    height: 560px;
-    margin-top: -80px;
-    background-image: url("./images/timetable.png   ");
-    background-size: cover;
+    display: flex;
+    align-items: center;
+    width: 45%;
+    height: 400px;  
+    background-image: url("./images/modal/detail/communication/timetable.jpg");
+    background-size: contain;
     background-repeat:no-repeat ;
 }
 .modal-communication-container .issue-timetable {
@@ -1315,7 +1324,6 @@ section{
     height: 360px;
     font-weight: 600;
     font-size: 15px;
-    margin-bottom: 90px;
 }
 .modal-communication-container .timetable-content {
     display: flex;
@@ -1487,7 +1495,7 @@ section{
 
 .modal-scope-container .achievement{
     margin-left: 350px;
-    background: url("./images/achievement.png");
+    background: url("./images/modal/detail/scope&limit/achievement.jpg");
     height: 666px;
     width: 600px;
     background-size: contain;
@@ -1511,11 +1519,11 @@ section{
 }
 .container .img img {
     width: 300px;
+    height: fit-content;
 }
 .container .content {
     width: 50%;
     height: 300px;
-
     margin-top: 8px;
     border-radius: 10px;
     background-color: var(--wheat);
