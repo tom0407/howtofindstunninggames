@@ -866,7 +866,7 @@ section{
 .modal-testing .modal-container-testing {
     width: 900px;
     max-width: calc(100% - 32px);
-    height: 720px;
+    height: 750px;
     background-color: var(--white);
     position: relative;
 }
